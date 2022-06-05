@@ -38,13 +38,13 @@ interface Product {
   }
   
 // USAGE:
-    const factory = new ProductFactory();
-    const product1 = factory.createProduct('product-a');
-    const product2 = factory.createProduct('product-b');
-    const product3 = factory.createProduct('product-c');
-    product1.doSomething();
-    product2.doSomething();
-    product3.doSomething();
+const factory = new ProductFactory();
+const product1 = factory.createProduct('product-a');
+const product2 = factory.createProduct('product-b');
+const product3 = factory.createProduct('product-c');
+product1.doSomething();
+product2.doSomething();
+product3.doSomething();
 // OUTPUT:
 // "Product A do this"
 // "Product A do this"

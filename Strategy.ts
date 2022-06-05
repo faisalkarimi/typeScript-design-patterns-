@@ -36,8 +36,8 @@ interface WorkoutStrategy {
   }
   
 // USAGE:
-    const amanda = new Person('Amanda', new Running());
-    amanda.workout();
+const amanda = new Person('Amanda', new Running());
+amanda.workout();
 // OUTPUT:
 // "Amanda starts:"
 // "Running" 

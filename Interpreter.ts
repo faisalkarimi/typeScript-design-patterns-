@@ -66,6 +66,7 @@ class AddExpression implements IntegerExpression {
     }
 }
 
+// USAGE:
 let context = new IntegerContext();
 
 let a = new IntegerVariableExpression("A");
@@ -79,4 +80,6 @@ context.assign(b, 1);
 context.assign(c, 3);
 
 const result = expression.evaluate(context);
-console.log(result); //6
+console.log(result); 
+// OUTPUT:
+//6

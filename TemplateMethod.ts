@@ -34,11 +34,11 @@ class BaseClass {
   }
   
 // USAGE:
-    const a = new ConcreteAClass();
-    const b = new ConcreteBClass();
-  
-    a.templateMethod();
-    b.templateMethod();
+const a = new ConcreteAClass();
+const b = new ConcreteBClass();
+
+a.templateMethod();
+b.templateMethod();
 // OUTPUT:
 // "A take actionA"
 // "A take actionB" 

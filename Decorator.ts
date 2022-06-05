@@ -38,9 +38,9 @@ interface Coffee {
   }
   
 // USAGE:
-    const general = new GeneralCoffee();
-    const withBubble = new BubbleDecorator(general);
-    const withMilk = new MilkDecorator(withBubble);
-    console.log(`Total: ${withMilk.cost()}`);
+const general = new GeneralCoffee();
+const withBubble = new BubbleDecorator(general);
+const withMilk = new MilkDecorator(withBubble);
+console.log(`Total: ${withMilk.cost()}`);
 // OUTPUT:
 // "Total: 17"

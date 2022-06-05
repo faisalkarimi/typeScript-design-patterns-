@@ -43,11 +43,11 @@ class Commander {
   }
   
 // USAGE:
-    const commanderA = new AirForceCommander(new Pilot());
-    const commanderB = new SpecialForceCommander(new Soldier());
-  
-    commanderA.order();
-    commanderB.order();
+const commanderA = new AirForceCommander(new Pilot());
+const commanderB = new SpecialForceCommander(new Soldier());
+
+commanderA.order();
+commanderB.order();
 // OUTPUT:
 // "Air Force commander make order"
 // "Fly"

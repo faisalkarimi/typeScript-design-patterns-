@@ -17,7 +17,7 @@ interface Adapter {
   }
   
 // USAGE:
-    const adapter = new InterfaceAdapter();
-    adapter.request('param');
+const adapter = new InterfaceAdapter();
+adapter.request('param');
 // OUTPUT:
 // "Request made in old interface." 

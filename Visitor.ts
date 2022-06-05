@@ -60,15 +60,15 @@ interface Visitable {
   }
   
 // USAGE:
-    const group = new ItemsGroup();
-    group.addItem(new MainItem());
-    group.addItem(new SideItem());
-  
-    const mainVisitor = new LogVisitor();
-    const sideVisitor = new DecorateVisitor();
-  
-    group.accept(mainVisitor);
-    group.accept(sideVisitor);
+const group = new ItemsGroup();
+group.addItem(new MainItem());
+group.addItem(new SideItem());
+
+const mainVisitor = new LogVisitor();
+const sideVisitor = new DecorateVisitor();
+
+group.accept(mainVisitor);
+group.accept(sideVisitor);
 // OUTPUT:
 // "Log mainItem, and add new logics"
 // "Log sideItem, and add new logics"

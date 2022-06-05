@@ -40,10 +40,10 @@ interface CarPrototype {
   }
   
 // USAGE:
-    const factory = new ChineseCarFactory()
-    const prototypes = ['Audi', 'Benz', 'BMW'].map((brand) => {
-      return factory.createCar(brand)
-    })
-    console.log(prototypes)
+const factory = new ChineseCarFactory()
+const prototypes = ['Audi', 'Benz', 'BMW'].map((brand) => {
+  return factory.createCar(brand)
+})
+console.log(prototypes)
 // OUTPUT:
 // [Audi: {}, Benz: {}, BMW: {}] 

@@ -1,25 +1,58 @@
-type Novella = {
-    name: string;
-};
+interface MyIterator {
+next(): any;
+hasNext(): boolean;
+}
 
-type Novellas = {
-    novellas: Novella[];
+interface Aggregator {
+createIterator(): MyIterator;
+}
 
-    makeIterator(): NovellaIterator {
-        return new NovellaIterator(novellas)
-    }
-};
+class ConcreteIterator implements MyIterator {
+    private collection: any[] = [];
+    private position: number = 0;
 
-class NovellaIterator {
-    current = 0;
-    novellas: Novella[];
-
-    constructor(novellas: Novella[]) {
-        this.novellas = novellas;
+    constructor(collection: any[]) {
+        this.collection = collection;
     }
 
-    next(): Novella {
-        return this.novellas.length > this.current++ ? this.novellas[this.current] : null;
+    public next(): any {
+        // Error handling is left out
+        var result = this.collection[this.position];
+        this.position += 1;
+        return result;
+    }
+
+    public hasNext(): boolean {
+        return this.position < this.collection.length;
     }
 }
 
+class Numbers implements Aggregator {
+    private collection: number[] = [];
+
+    constructor(collection: number[]) {
+        this.collection = collection;
+    }
+    public createIterator(): MyIterator {
+        return new ConcreteIterator(this.collection);
+    }
+}
+  
+// USAGE:
+var nArray = [1, 7, 21, 657, 3, 2, 765, 13, 65],
+numbers: Numbers = new Numbers(nArray),
+it: MyIterator = numbers.createIterator();
+
+while (it.hasNext()) {
+console.log(it.next());
+}
+// OUTPUT:
+// 1
+// 7
+// 21
+// 657
+// 3
+// 2
+// 765
+// 13
+// 65

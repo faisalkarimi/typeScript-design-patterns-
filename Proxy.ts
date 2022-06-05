@@ -23,8 +23,8 @@ interface IResource {
   }
   
 // USAGE:
-    const proxy = new ResourceProxy();
-    proxy.fetch();
+const proxy = new ResourceProxy();
+proxy.fetch();
 // OUTPUT:
 // "invoke resource fetch method"
 // "fetch resource" 

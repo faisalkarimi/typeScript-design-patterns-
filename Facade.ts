@@ -37,8 +37,8 @@ class EngineSystem {
   }
   
 // USAGE:
-    const operation = new RocketTestingOperation();
-    operation.operationStart();
+const operation = new RocketTestingOperation();
+operation.operationStart();
 // OUTPUT:
 // "Check system situations"
 // "Oxygen will be generated"

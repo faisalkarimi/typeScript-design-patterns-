@@ -54,24 +54,24 @@ interface ArmyObject {
   }
   
   // USAGE:
-    const team = new Team('Seal Team 6');
-    const specialSquad = new Team('Seal Team 6 - Special Squad');
-  
-    const soldierJoe = new Soldier('Joe');
-    const soldierJames = new Soldier('James');
-    const soldierRoy = new Soldier('Roy');
-    team.addSoldier(soldierJoe);
-    team.addSoldier(soldierJames);
-    team.addSoldier(soldierRoy);
-  
-    const specialForceTommy = new Soldier('Tommy');
-  
-    specialSquad.addSoldier(specialForceTommy);
-  
-    team.operate();
-    specialSquad.operate();
-  
-    team.soldierGone(soldierJames);
+const team = new Team('Seal Team 6');
+const specialSquad = new Team('Seal Team 6 - Special Squad');
+
+const soldierJoe = new Soldier('Joe');
+const soldierJames = new Soldier('James');
+const soldierRoy = new Soldier('Roy');
+team.addSoldier(soldierJoe);
+team.addSoldier(soldierJames);
+team.addSoldier(soldierRoy);
+
+const specialForceTommy = new Soldier('Tommy');
+
+specialSquad.addSoldier(specialForceTommy);
+
+team.operate();
+specialSquad.operate();
+
+team.soldierGone(soldierJames);
   // OUTPUT:
   // "Soldier: Joe comes in Seal Team 6"
   // "Soldier: James comes in Seal Team 6" 
