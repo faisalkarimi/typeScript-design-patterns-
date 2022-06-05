@@ -52,13 +52,13 @@ abstract class AbstractProductA {
   }
   
 // USAGE:
-    const nyFactory = new NewYorkFactory();
-    nyFactory.createProductA();
-    nyFactory.createProductB();
-  
-    const calFactory = new CaliforniaFactory();
-    calFactory.createProductA();
-    calFactory.createProductB();
+const nyFactory = new NewYorkFactory();
+nyFactory.createProductA();
+nyFactory.createProductB();
+
+const calFactory = new CaliforniaFactory();
+calFactory.createProductA();
+calFactory.createProductB();
 // OUTPUT:
 // "ProductA made in New York" 
 // "ProductB made in New York"
