@@ -12,11 +12,11 @@
 |[🎶 Interpreter](#interpreter)| [🏭 Factory Method](#factory-method)| [🌿 Composite](#composite)
 |[🍫 Iterator](#iterator)| [🃏 Prototype](#prototype)| [🍧 Decorator](#decorator)|
 |[💐 Mediator](#mediator)| [💍 Singleton](#singleton)| [🎁 Façade](#façade)|
-|[💾 Momento](#momento)| |[](#) |[🍃 Flyweight](#flyweight)|
-|[👓 Observer](#observer)| |[](#) |[☔ Proxy](#proxy)|
-|[🐉 State](#state)| |[](#)  |[](#)|
-|[💡 Strategy](#strategy)| |[](#)
-|[🏃 Visitor](#visitor)| |[](#) 
+|[💾 Momento](#momento)||[🍃 Flyweight](#flyweight)|
+|[👓 Observer](#observer)||[☔ Proxy](#proxy)|
+|[🐉 State](#state)|
+|[💡 Strategy](#strategy)|
+|[🏃 Visitor](#visitor)|
 |[📝 Template Method](#template-method)| 
 
 # Behavioral <a name="behavioral"></a>
