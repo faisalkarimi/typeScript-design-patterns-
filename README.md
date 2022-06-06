@@ -1738,5 +1738,5 @@ proxy.fetch();
 ```
 
 ## Resources:
-[Design Patterns implemented in Swift 5.0](https://github.com/ochococo/Design-Patterns-In-Swift#readme)
-[Design Patterns](https://refactoring.guru/design-patterns/)
++ [Design Patterns implemented in Swift 5.0](https://github.com/ochococo/Design-Patterns-In-Swift#readme)
++ [Design Patterns](https://refactoring.guru/design-patterns/)
